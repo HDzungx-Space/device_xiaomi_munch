@@ -29,6 +29,9 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Dolby Support
+TARGET_USES_MIUI_DOLBY := true
+
 # Camera
 PRODUCT_PACKAGES += \
     libpiex_shim
